@@ -1,0 +1,6 @@
+.home-container{ ng_controller: 'homeCtrl' }
+  %h1
+    Anguar/Rails Test
+  %hr
+    %p{ ng_show:  "signedIn()" }
+      Welcome {{ user.email }}

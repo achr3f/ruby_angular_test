@@ -1,0 +1,12 @@
+.collapse.navbar-collapse.pull-right{ ng_controller: 'navCtrl' }
+  %ul.nav.navbar-nav
+    %li
+      %a{ href: "#/home" } Home
+    %li{ ng_hide: "signedIn()" }
+      %a{ href: "#/login" } Log In
+    %li{ ng_hide: "signedIn()" }
+      %a{ href: "#/register" } Register
+    %li{ ng_show:  "signedIn()" }
+      %a{ href: "#/" } {{ user.email }}
+    %li{ ng_show:  "signedIn()" }
+      %a{ ng_click: "logout()" } Log Out

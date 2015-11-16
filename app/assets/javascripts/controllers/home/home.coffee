@@ -1,0 +1,1 @@
+@cooking.controller 'homeCtrl', ($scope) ->

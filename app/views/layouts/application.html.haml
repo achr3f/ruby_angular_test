@@ -1,0 +1,14 @@
+!!!
+%html{ ng: { app: 'cookingRecipes' }}
+  %head
+    %title CookingRecipes
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+  %body
+    .row
+      .col-md-6.col-md-offset-3
+        %div{ ng_include: '"assets/templates/layouts/nav/_nav.html"' }
+
+        %ng-view
