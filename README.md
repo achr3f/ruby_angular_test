@@ -1,6 +1,6 @@
 # Welcome to Altagem Challenge
 
-
+SYS
 Installation
 ---------------
 Before starting,  check if you have ruby, rails, git and bower installed on your machine
