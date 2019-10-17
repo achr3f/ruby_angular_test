@@ -13,4 +13,8 @@
   .when "/home",
     templateUrl: 'assets/templates/home/index.html'
 
-  .otherwise redirectTo: "/home"
+  .when "/add",
+    controller:  'addCtrl'
+    templateUrl: 'assets/templates/add/add.html'
+
+   
